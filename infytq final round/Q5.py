@@ -16,7 +16,7 @@ for a in s:
         counter+=1
     elif(a==')' and b=='('):
         counter+=1
-    if len(stack)==0:
-        print(0)
-    else:
-        print(counter+1)
+if len(stack)==0:
+    print(0)
+else:
+    print(counter+1)

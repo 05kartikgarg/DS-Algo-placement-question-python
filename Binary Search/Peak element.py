@@ -1,5 +1,4 @@
 arr=list(map(int,input().split()))
-
 low=0
 high=len(arr)-1
 result=-1
