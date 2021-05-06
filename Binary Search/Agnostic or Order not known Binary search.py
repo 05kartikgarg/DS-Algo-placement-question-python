@@ -11,9 +11,9 @@ def BinarySearchAsc(arr,l,r,n):
     if arr[mid]==n:
         return mid
     elif arr[mid]>n:
-        return BinarySearch(arr,0,mid-1,n)
+        return BinarySearchAsc(arr,0,mid-1,n)
     elif arr[mid]<n:
-        return BinarySearch(arr,mid+1,len(arr)-1,n)
+        return BinarySearchAsc(arr,mid+1,len(arr)-1,n)
     else:
         return -1
     
@@ -26,14 +26,14 @@ def BinarySearchdesc(arr,l,r,n):
     if arr[mid]==n:
         return mid
     elif arr[mid]>n:
-        return BinarySearch(arr,mid+1,len(arr)-1,n)
+        return BinarySearchdesc(arr,mid+1,len(arr)-1,n)
     elif arr[mid]<n:
-        return BinarySearch(arr,0,mid-1,n)
+        return BinarySearchdesc(arr,0,mid-1,n)
     else:
         return -1
 
 if len(arr)==1:
-    return arr[0]
+    print(arr[0])
 else:
     if arr[0]<arr[1]:
         print(BinarySearchAsc(arr,0,r,n))

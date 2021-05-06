@@ -6,7 +6,7 @@ dp=[[False for x in range(s + 1)] for x in range(n + 1)]
 for i in range(n+1):
     dp[i][0]=True
 
-for j in range(s+1):
+for j in range(1,s+1):
     dp[0][j]=False
 
     
