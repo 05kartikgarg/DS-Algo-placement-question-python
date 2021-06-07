@@ -21,7 +21,18 @@ class Tree:
             self.Inorder(root.left)
             print(root.data,end=" ")
             self.Inorder(root.right)
-        
+    '''        
+    def Inorder(self,root):
+        stack=[]
+        result=[]
+        while root is not None or stack!=[]:
+            while root is not None:
+                stack.append(root)
+                root=root.left
+            root=stack.pop()
+            result.append(root.data)
+            root=root.right
+    '''    
     def preOrder(self,root):
         if root is not None:
             print(root.data,end=' ')

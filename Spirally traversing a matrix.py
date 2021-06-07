@@ -45,7 +45,6 @@ Expected Auxiliary Space: O(R*C)
 def spiralPrint(m, n, a):
     k = 0
     l = 0
-
     ''' k - starting row index
         m - ending row index
         l - starting column index
