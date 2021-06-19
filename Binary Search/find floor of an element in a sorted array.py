@@ -47,4 +47,3 @@ if (index == -1):
 else: 
 	print("Floor of", x, "is", arr[index]) 
 
-# This code is contributed by Smitha Dinesh Semwal. 
