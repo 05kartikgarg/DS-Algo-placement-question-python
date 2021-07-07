@@ -1,8 +1,14 @@
-def comb(n,r):
-    if r==0:
+def fact(n):
+    if n==0 or n==1:
         return 1
-    res=(n-r+1)//r
+    return n*fact(n-1)
+
+def comb(n,r):
+    if r==0 or n==0:
+        return 1
+    res=fact(n)//(fact(r)*fact(n-r))
     return res
+
 n=int(input())
 def generate(numRows):
         result=[]
@@ -12,5 +18,7 @@ def generate(numRows):
                 temp.append(comb(i,j))
             result.append(temp)
         return result
-print(generate(n))
+l=generate(n)
+for i in l:
+    print(" ".join(str(i)))
         

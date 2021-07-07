@@ -1,9 +1,8 @@
 s=input()
-temp=[i for i in s]
-n=len(temp)
+n=len(s)
 flag=1
 for i in range(n//2+1):
-    if temp[i]!=temp[n-i-1]:
+    if s[i]!=s[n-i-1]:
         flag=0
         break
 
