@@ -12,3 +12,9 @@ def permute(nums):
         result.extend(perms)
         nums.append(n)
     return result
+
+s=input()
+nums=[i for i in s]
+res=permute(nums)
+for i in res:
+    print(''.join(i),end=' ')
