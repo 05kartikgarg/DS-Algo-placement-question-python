@@ -5,7 +5,7 @@ def permute(nums):
 
     for i in range(len(nums)):
         n=nums.pop(0)
-        perms=self.permute(nums)
+        perms=permute(nums)
 
         for perm in perms:
             perm.append(n)
