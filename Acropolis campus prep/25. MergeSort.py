@@ -45,7 +45,7 @@ def mergeSort(arr,l,r):
 n=int(input())
 arr=list(map(int,input().split()))
 mergeSort(arr,0,n-1)
-print(arr)
+print(" ".join(str(i) for i in arr))
 
 '''
 7

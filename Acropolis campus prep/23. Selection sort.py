@@ -9,7 +9,7 @@ def selectionsort(A):
 n=int(input())
 A=list(map(int,input().split()))
 selectionsort(A)
-print(A)
+print(" ".join(str(i) for i in A))
 
 '''
 7
