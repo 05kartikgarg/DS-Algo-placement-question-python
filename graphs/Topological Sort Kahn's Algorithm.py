@@ -1,7 +1,7 @@
 def kahn(graph,visited,indegree):
     queue=[]
     for key in indegree:
-        if visited[key]==0:
+        if indegree[key]==0:
             queue.append(key)
             visited[key]=True
     while queue:

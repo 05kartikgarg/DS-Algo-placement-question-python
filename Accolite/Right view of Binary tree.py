@@ -59,5 +59,30 @@ if __name__ == '__main__':
 	root.right.right.left = newNode(14)
 	printRightView(root)
 
-# This code is contributed by
-# Shubham Singh(SHUBHAMSINGH10)
+
+'''
+def rightview(self,root):
+        result=[]
+        level=[]
+        queue=[root]
+        while queue!=[] and root is not None:
+                for node in queue:
+                        if node.left:
+                                level.append(node.left)
+                        if node.right:
+                                level.append(node.right)
+                result.append(node.val)
+                queue=level
+                level=[]
+        return result
+
+
+'''
+
+
+
+
+
+
+
+

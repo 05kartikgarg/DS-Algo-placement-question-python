@@ -1,7 +1,6 @@
 '''
 Rotate a matrix by 90 degree in clockwise direction without using any extra space
-Difficulty Level : Medium
- Last Updated : 05 Feb, 2021
+
 Given a square matrix, turn it by 90 degrees in clockwise direction without using any extra space.
 
 Examples: 

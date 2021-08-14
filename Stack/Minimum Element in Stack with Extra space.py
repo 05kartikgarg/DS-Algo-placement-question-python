@@ -8,7 +8,7 @@ def push(a):
     return
 
 def popu():
-    if len(s)==0:
+    if len(ss)==0:
         return -1
     ans=stack.pop()
     if ss[-1]==ans:
