@@ -10,3 +10,10 @@ def rotate(arr,n):
     return arr
 
 print(rotate(arr,n))
+
+'''
+n=5
+arr=10 45 20 32 15
+
+result= 15 10 45 20 32
+'''

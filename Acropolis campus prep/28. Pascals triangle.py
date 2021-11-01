@@ -19,6 +19,8 @@ def generate(numRows):
             result.append(temp)
         return result
 l=generate(n)
-for i in l:
-    print(" ".join(str(i)))
+for i in range(len(l)):
+    for j in range(n-i+1):
+        print(end=" ")
+    print(" ".join(str(i) for i in l[i]))
         

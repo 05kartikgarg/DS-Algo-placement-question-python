@@ -1,9 +1,9 @@
 MAX = 256
 def lastNonRepeating(string, n) :
-	freq = [0]*MAX;
+	freq = [0]*MAX
 
 	for i in range(n) :
-		freq[ord(string[i])] += 1;
+		freq[ord(string[i])] += 1
 
 	for i in range(n-1,-1,-1) :
 		ch = string[i]

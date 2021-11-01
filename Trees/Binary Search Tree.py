@@ -4,6 +4,7 @@ class Node:
         self.data=value
         self.right=None
         self.level=None
+
 class Tree:
     def createNode(self,data):
         return Node(data)
@@ -44,6 +45,7 @@ class Tree:
             self.postOrder(root.left)
             self.postOrder(root.right)
             print(root.data,end=' ')
+            
     def height(self,root):
         if root is None:
             return -1
@@ -73,6 +75,7 @@ class Tree:
             if values[i]>=values[i+1]:
                 return False
         return True
+    
     def topView(self,root):
         q=[]
         d=dict()

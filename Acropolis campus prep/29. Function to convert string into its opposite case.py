@@ -8,7 +8,7 @@ def convertOpposite(str):
  
         elif str[i] >= 'A' and str[i] <= 'Z':
  
-            # Convert lowercase to uppercase
+            # Convert uppercase to lowercase 
             str[i] = chr(ord(str[i]) + 32)
 
 if __name__ == "__main__":

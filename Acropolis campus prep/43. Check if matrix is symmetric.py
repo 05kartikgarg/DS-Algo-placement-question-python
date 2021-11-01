@@ -25,4 +25,4 @@ if (isSymmetric(mat, 3)):
 else:
 	print "No"
 
-# This code is contributed by Sachin Bisht
+

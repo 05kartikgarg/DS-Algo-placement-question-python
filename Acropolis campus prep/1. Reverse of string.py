@@ -6,3 +6,12 @@ for i in range(n//2):
 print("".join(temp))
     
     
+'''
+s=input()
+res=""
+for i in s:
+    res=i+res
+print(res)
+
+print("".join(reversed(s)))
+'''

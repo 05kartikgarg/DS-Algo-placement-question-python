@@ -18,3 +18,8 @@ def reversed1(n):
         n=n//10
     return rev
 print(reversed1(n))       
+
+
+#method 3
+
+print(int("".join(reversed(str(n)))))
