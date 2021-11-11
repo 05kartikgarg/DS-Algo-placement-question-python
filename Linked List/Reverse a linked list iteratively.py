@@ -25,7 +25,7 @@ class LinkedList:
     def reverseRecursive(self, head):
         if head is None or head.next is None:
             return head
-        rest = self.reverse(head.next)
+        rest = self.reverseRecursive(head.next)
         head.next.next = head
         head.next = None
         return rest
